@@ -1,0 +1,13 @@
+/* width 660px */
+@media screen and (max-width:660px) {
+  input[type="text"], .title, .todo__content {
+    width: 300px;
+  }
+}
+
+/* width 350 */
+@media screen and (max-width:350px) {
+  input[type="text"], .title, .todo__content {
+    width: 250px;
+  }
+}

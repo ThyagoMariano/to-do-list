@@ -1,0 +1,74 @@
+/* GERAL */
+* {
+  padding: 0;
+  margin: 0;
+  outline-style: none;
+}
+
+body {
+  background-color: rgb(78, 75, 75);
+}
+
+/* CAIXA */
+.caixa {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 40px;
+
+}
+
+.title {
+  background-color: black;
+  color: yellow;
+
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+/* CHECKBOX, OUTPUT CONTEUDO, BUTTON */
+.todo__content {
+  display: flex;
+  justify-content: space-between;
+
+  border: 1px solid yellow;
+}
+
+.todo__content div {
+  display: flex;
+  align-items: center;
+}
+
+.todo__content input[type="button"] {
+  padding: 5px 10px;
+  border: red;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.todo__content input[type="button"]:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.todo__content input[type="checkbox"]:checked+#content {
+  text-decoration: line-through;
+}
+
+/* REAPROVEITAMENTO */
+input[type="text"], .title, .todo__content {
+  width: 600px;
+}
+
+.title, input, .todo__content {
+  padding: 15px;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+#content {
+  overflow: hidden;
+}
